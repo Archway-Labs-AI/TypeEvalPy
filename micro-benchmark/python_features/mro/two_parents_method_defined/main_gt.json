@@ -5,7 +5,8 @@
         "col_offset": 9,
         "function": "A.func",
         "type": [
-            "float"
+            "float",
+            "str"
         ]
     },
     {
@@ -14,7 +15,8 @@
         "col_offset": 9,
         "function": "B.func",
         "type": [
-            "int"
+            "int",
+            "str"
         ]
     },
     {
