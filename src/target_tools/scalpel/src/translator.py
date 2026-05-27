@@ -1,9 +1,9 @@
 import argparse
+import ast
 import json
 import os
+from collections import defaultdict
 from pathlib import Path
-
-import jedi
 
 
 def list_json_files(folder_path):
@@ -12,16 +12,33 @@ def list_json_files(folder_path):
 
 
 def build_position_map(source_path):
-    """Map (name, line_number) -> 1-indexed col_offset for every definition
-    and reference in the source. Scalpel's runner doesn't emit col_offset, so
-    we recover it by parsing the source with Jedi."""
-    positions = {}
+    """Map (name, line_number) -> [1-indexed col_offsets] for every name
+    occurrence in the source. Scalpel's runner doesn't emit col_offset, but
+    for any (name, line) it gives us, the column is determined by the source.
+    We keep all candidates so the enrichment can skip ambiguous cases."""
+    positions = defaultdict(list)
     try:
-        script = jedi.Script(path=str(source_path))
-        for n in script.get_names(all_scopes=True, definitions=True, references=True):
-            positions.setdefault((n.name, n.line), n.column + 1)
+        with open(source_path) as f:
+            tree = ast.parse(f.read())
     except Exception:
-        pass
+        return positions
+
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Name):
+            positions[(node.id, node.lineno)].append(node.col_offset + 1)
+        elif isinstance(node, ast.arg):
+            positions[(node.arg, node.lineno)].append(node.col_offset + 1)
+        elif isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
+            prefix = (
+                "async def " if isinstance(node, ast.AsyncFunctionDef) else "def "
+            )
+            positions[(node.name, node.lineno)].append(
+                node.col_offset + len(prefix) + 1
+            )
+        elif isinstance(node, ast.ClassDef):
+            positions[(node.name, node.lineno)].append(
+                node.col_offset + len("class ") + 1
+            )
     return positions
 
 
@@ -43,7 +60,8 @@ def _lookup_name(entry):
 
 def enrich_with_col_offsets(source_path, entries):
     """Augment entries with col_offset by looking up the position of each
-    entry's identifying name in the source file."""
+    entry's identifying name in the source file. Skip ambiguous cases
+    (multiple candidates) so we never guess a position."""
     positions = build_position_map(source_path)
     for entry in entries:
         if "col_offset" in entry:
@@ -51,9 +69,9 @@ def enrich_with_col_offsets(source_path, entries):
         name = _lookup_name(entry)
         if name is None:
             continue
-        col = positions.get((name, entry["line_number"]))
-        if col is not None:
-            entry["col_offset"] = col
+        cands = sorted(set(positions.get((name, entry["line_number"]), [])))
+        if len(cands) == 1:
+            entry["col_offset"] = cands[0]
     return entries
 
 
