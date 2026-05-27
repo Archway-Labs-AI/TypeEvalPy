@@ -3,10 +3,63 @@ import json
 import os
 from pathlib import Path
 
+import jedi
+
 
 def list_json_files(folder_path):
     python_files = sorted(Path(folder_path).rglob("*.json"))
     return python_files
+
+
+def build_position_map(source_path):
+    """Map (name, line_number) -> 1-indexed col_offset for every definition
+    in the source file. HeaderGen's server doesn't emit col_offset, so we
+    recover it by parsing the source with Jedi."""
+    positions = {}
+    try:
+        script = jedi.Script(path=str(source_path))
+        for n in script.get_names(all_scopes=True, definitions=True, references=True):
+            positions.setdefault((n.name, n.line), n.column + 1)
+    except Exception:
+        pass
+    return positions
+
+
+def _lookup_name(entry):
+    """Return the source-level name to look up for this entry's position."""
+    if "variable" in entry:
+        # Subscript/attribute accesses like 'h[0]' or 'self.child' are
+        # reported as the full expression; the col_offset GT expects is
+        # where the base name begins.
+        name = entry["variable"]
+        for sep in ("[", "."):
+            if sep in name:
+                name = name.split(sep, 1)[0]
+                break
+        return name
+    if "parameter" in entry:
+        return entry["parameter"]
+    if "function" in entry:
+        # Nested functions are reported as 'outer.inner'; the position
+        # we want is the inner name's own column.
+        return entry["function"].rsplit(".", 1)[-1]
+    return None
+
+
+def enrich_with_col_offsets(source_path, entries):
+    """Augment HeaderGen entries with col_offset by looking up the position
+    of each entry's identifying name in the source file."""
+    positions = build_position_map(source_path)
+    for entry in entries:
+        if "col_offset" in entry:
+            continue
+        name = _lookup_name(entry)
+        if name is None:
+            continue
+        col = positions.get((name, entry["line_number"]))
+        if col is not None:
+            entry["col_offset"] = col
+    return entries
 
 
 def translate_content(file_path):
