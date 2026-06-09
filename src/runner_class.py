@@ -320,6 +320,40 @@ class PySonar2Runner(TypeEvalPyRunner):
         )
 
 
+class SonarRunner(TypeEvalPyRunner):
+    def __init__(
+        self,
+        host_results_path,
+        debug=False,
+        nocache=False,
+        custom_benchmark_dir=None,
+    ):
+        super().__init__(
+            "sonar",
+            "./target_tools/sonar",
+            host_results_path,
+            nocache=nocache,
+            custom_benchmark_dir=custom_benchmark_dir,
+        )
+
+
+class TyRunner(TypeEvalPyRunner):
+    def __init__(
+        self,
+        host_results_path,
+        debug=False,
+        nocache=False,
+        custom_benchmark_dir=None,
+    ):
+        super().__init__(
+            "ty",
+            "./target_tools/ty",
+            host_results_path,
+            nocache=nocache,
+            custom_benchmark_dir=custom_benchmark_dir,
+        )
+
+
 class Type4pyRunner(TypeEvalPyRunner):
     def __init__(
         self,
