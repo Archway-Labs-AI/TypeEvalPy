@@ -1,36 +1,22 @@
-# Pull the Python base image
-FROM python:3.10-slim-bullseye
+FROM python:3.11-slim-bookworm
 
-# Set environment variables
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
 
-# Set work directory
 WORKDIR /app
 
-# Install dependencies
 RUN apt-get update \
-    && apt-get -y install gcc
+    && apt-get install -y --no-install-recommends curl ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
 
-ENV NODE_VERSION=18.16.1
-RUN apt install -y curl
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-ENV NVM_DIR=/root/.nvm
-RUN . "$NVM_DIR/nvm.sh" && nvm install ${NODE_VERSION}
-RUN . "$NVM_DIR/nvm.sh" && nvm use v${NODE_VERSION}
-RUN . "$NVM_DIR/nvm.sh" && nvm alias default v${NODE_VERSION}
-ENV PATH="/root/.nvm/versions/node/v${NODE_VERSION}/bin/:${PATH}"
-RUN node --version
-RUN npm --version
+# Node 20 LTS via NodeSource — minimal, no nvm bloat.
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y --no-install-recommends nodejs \
+    && rm -rf /var/lib/apt/lists/*
 
-# Install pyright
-RUN npm install --global pyright@1.1.317
+# Pinned pyright. Bump deliberately so result deltas can be attributed to
+# either the tool or the benchmark, not both at once.
+RUN npm install --global pyright@1.1.410
 
 COPY src /tmp/src
-COPY requirements.txt /app/requirements.txt
 
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
-
-# Start pyright_client.py in the background
-CMD ["bash", "-c", "python /tmp/src/pyright_client.py & bash"]
+CMD ["bash"]
