@@ -371,6 +371,23 @@ class PyreflyRunner(TypeEvalPyRunner):
         )
 
 
+class MypyRunner(TypeEvalPyRunner):
+    def __init__(
+        self,
+        host_results_path,
+        debug=False,
+        nocache=False,
+        custom_benchmark_dir=None,
+    ):
+        super().__init__(
+            "mypy",
+            "./target_tools/mypy",
+            host_results_path,
+            nocache=nocache,
+            custom_benchmark_dir=custom_benchmark_dir,
+        )
+
+
 class Type4pyRunner(TypeEvalPyRunner):
     def __init__(
         self,
