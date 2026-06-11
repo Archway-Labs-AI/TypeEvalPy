@@ -42,6 +42,9 @@ REVEAL_RE = re.compile(
 )
 
 
+_SYNTHETIC_MAP = {"None": "Nonetype", "Generator": "generator"}
+
+
 @dataclass
 class Insertion:
     """Where to insert a `reveal_type(<expr>)` for one GT entry."""
@@ -59,6 +62,7 @@ class FnInfo:
     body_first_line: int = -1
     body_indent: str = ""
     returns: list[ast.Return] = field(default_factory=list)
+    has_yields: bool = False
 
 
 def main_runner(benchmark_path: str) -> int:
@@ -145,6 +149,7 @@ def collect_functions(tree: ast.Module) -> dict[str, FnInfo]:
         # Direct returns inside THIS function — don't descend into nested
         # FunctionDefs (their returns belong to them, not the enclosing fn).
         info.returns.extend(_returns_of(node))
+        info.has_yields = _has_yield(node)
         out[qual] = info
         # Also expose the bare name for top-level functions, but only the
         # first wins (so we don't shadow a class method's qualified name).
@@ -179,6 +184,24 @@ def _returns_of(fn: ast.AST) -> list[ast.Return]:
 
     walk(fn)
     return out
+
+
+def _has_yield(fn: ast.AST) -> bool:
+    """True if fn's body contains a yield or yield-from (excluding nested
+    functions / lambdas, whose yields belong to them)."""
+    found = [False]
+    def walk(node):
+        for child in ast.iter_child_nodes(node):
+            if isinstance(child, (ast.FunctionDef, ast.AsyncFunctionDef, ast.Lambda)):
+                continue
+            if isinstance(child, (ast.Yield, ast.YieldFrom)):
+                found[0] = True
+                return
+            walk(child)
+            if found[0]:
+                return
+    walk(fn)
+    return found[0]
 
 
 def _resolve_variable_position(
@@ -248,11 +271,12 @@ def plan_insertion(
         if fn is None:
             return None
         if not fn.returns:
-            # Function body never returns explicitly: by Python semantics the
-            # return type is None. Signal a synthetic "Nonetype" prediction
-            # via a marker insertion (after_line=-1) — render_transformed skips
-            # the marker but parse_reveal_lines treats it as a fixed type.
-            return [Insertion(after_line=-1, indent="", expr="None",
+            # Function body never returns explicitly: generator functions yield
+            # so the "return" is a Generator; everything else returns None.
+            # Marker insertion (after_line=-1) — render_transformed skips it
+            # but parse_reveal_lines treats it as a fixed type.
+            synth_expr = "Generator" if fn.has_yields else "None"
+            return [Insertion(after_line=-1, indent="", expr=synth_expr,
                               gt_index=gt_index)]
         out: list[Insertion] = []
         for ret in fn.returns:
@@ -302,7 +326,7 @@ def render_transformed(
     for ins in insertions:
         if ins.after_line < 0:
             synthetic.setdefault(ins.gt_index, []).append(
-                "Nonetype" if ins.expr == "None" else ins.expr
+                _SYNTHETIC_MAP.get(ins.expr, ins.expr)
             )
             continue
         by_line.setdefault(ins.after_line, []).append(ins)
@@ -526,10 +550,12 @@ def literal_item_type(item: str) -> list[str]:
 
 
 def normalize_class_name(name: str) -> str:
-    """Strip module prefix and map to TypeEvalPy's lowercase builtins."""
-    if "." in name:
-        name = name.rsplit(".", 1)[-1]
-    low = name.lower()
+    """Map a class-name string onto TypeEvalPy's flat vocabulary. See pyright/
+    pyrefly copies for the full docstring; same logic everywhere."""
+    if name.startswith("builtins."):
+        name = name[len("builtins."):]
+    bare = name.rsplit(".", 1)[-1]
+    low = bare.lower()
     if low in {"int", "str", "float", "bool", "bytes", "complex",
               "list", "dict", "tuple", "set", "frozenset"}:
         return low

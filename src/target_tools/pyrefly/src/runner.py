@@ -47,6 +47,9 @@ PYREFLY_CONFIG = 'project-includes = ["**/*.py"]\n'
 REVEALED_PREFIX = "revealed type: "
 
 
+_SYNTHETIC_MAP = {"None": "Nonetype", "Generator": "generator"}
+
+
 @dataclass
 class Insertion:
     after_line: int
@@ -62,6 +65,7 @@ class FnInfo:
     body_first_line: int = -1
     body_indent: str = ""
     returns: list[ast.Return] = field(default_factory=list)
+    has_yields: bool = False
 
 
 def main_runner(benchmark_path: str) -> int:
@@ -139,6 +143,7 @@ def collect_functions(tree: ast.Module) -> dict[str, FnInfo]:
             info.body_first_line = node.body[0].lineno
             info.body_indent = " " * node.body[0].col_offset
         info.returns.extend(_returns_of(node))
+        info.has_yields = _has_yield(node)
         out[qual] = info
         bare = qual.rsplit(".", 1)[-1]
         out.setdefault(bare, info)
@@ -169,6 +174,24 @@ def _returns_of(fn: ast.AST) -> list[ast.Return]:
 
     walk(fn)
     return out
+
+
+def _has_yield(fn: ast.AST) -> bool:
+    """True if fn's body contains a yield or yield-from (excluding nested
+    functions / lambdas, whose yields belong to them)."""
+    found = [False]
+    def walk(node):
+        for child in ast.iter_child_nodes(node):
+            if isinstance(child, (ast.FunctionDef, ast.AsyncFunctionDef, ast.Lambda)):
+                continue
+            if isinstance(child, (ast.Yield, ast.YieldFrom)):
+                found[0] = True
+                return
+            walk(child)
+            if found[0]:
+                return
+    walk(fn)
+    return found[0]
 
 
 def _resolve_variable_position(
@@ -235,7 +258,8 @@ def plan_insertion(
         if fn is None:
             return None
         if not fn.returns:
-            return [Insertion(after_line=-1, indent="", expr="None", gt_index=gt_index)]
+            synth_expr = "Generator" if fn.has_yields else "None"
+            return [Insertion(after_line=-1, indent="", expr=synth_expr, gt_index=gt_index)]
         out: list[Insertion] = []
         for ret in fn.returns:
             if ret.value is None:
@@ -276,7 +300,7 @@ def render_transformed(
     for ins in insertions:
         if ins.after_line < 0:
             synthetic.setdefault(ins.gt_index, []).append(
-                "Nonetype" if ins.expr == "None" else ins.expr
+                _SYNTHETIC_MAP.get(ins.expr, ins.expr)
             )
             continue
         by_line.setdefault(ins.after_line, []).append(ins)
@@ -536,9 +560,19 @@ def literal_item_type(item: str) -> list[str]:
 
 
 def normalize_class_name(name: str) -> str:
-    if "." in name:
-        name = name.rsplit(".", 1)[-1]
-    low = name.lower()
+    """Map a class-name string onto TypeEvalPy's flat vocabulary.
+
+    Built-in types are emitted lowercase (`int`, `str`, ...). Stdlib types
+    and user-class names from other modules KEEP their module qualifier —
+    TypeEvalPy GT for these uses the qualified form (`itertools.groupby`,
+    `to_import.A`, etc.), so stripping the prefix produces a false miss.
+    `builtins.` is the one prefix we always strip (some checkers emit
+    `builtins.int` where TypeEvalPy expects bare `int`).
+    """
+    if name.startswith("builtins."):
+        name = name[len("builtins."):]
+    bare = name.rsplit(".", 1)[-1]
+    low = bare.lower()
     if low in {"int", "str", "float", "bool", "bytes", "complex",
               "list", "dict", "tuple", "set", "frozenset"}:
         return low
