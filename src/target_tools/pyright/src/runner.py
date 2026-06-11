@@ -340,14 +340,24 @@ _LITERAL_VALUE_TO_TYPE = {
 
 def flatten_pyright_type(text: str) -> list[str]:
     text = text.strip()
-    if not text or text in ("Unknown", "Any", "Never"):
+    # Pyright wraps callables in parens when they appear as union members:
+    # `(() -> Literal[5]) | Unbound`. Strip any depth-balanced outer pair so
+    # callable detection sees the unwrapped form. (Same form pyrefly uses.)
+    text = _strip_outer_parens(text)
+    # `Unbound` is pyright's marker for a variable that isn't (yet) in scope at
+    # the inspected position — typically produced by our harness when an
+    # injected reveal_type lands inside a multi-line literal or at the wrong
+    # indent level. Treat as no information rather than emitting the literal
+    # string "Unbound".
+    if not text or text in ("Unknown", "Any", "Never", "Unbound"):
         return []
     if text == "None":
         return ["Nonetype"]
     if text == "LiteralString":
         return ["str"]
     if text.startswith("Self@"):
-        return [normalize_class_name(text[len("Self@"):])]
+        head = text[len("Self@"):].split(" ", 1)[0].strip()
+        return [normalize_class_name(head)]
     # Callable forms: top-level " -> " at depth 0.
     if _looks_like_callable(text):
         return ["callable"]
@@ -377,6 +387,27 @@ def flatten_pyright_type(text: str) -> list[str]:
     if gen:
         return [normalize_class_name(gen.group(1))]
     return [normalize_class_name(text)]
+
+
+def _strip_outer_parens(text: str) -> str:
+    """If ``text`` starts with ``(`` and ends with a balanced ``)`` that wraps
+    the whole expression, return the inner text. Otherwise unchanged."""
+    while text.startswith("(") and text.endswith(")"):
+        depth = 0
+        balanced = True
+        for i, ch in enumerate(text):
+            if ch == "(":
+                depth += 1
+            elif ch == ")":
+                depth -= 1
+                if depth == 0 and i < len(text) - 1:
+                    balanced = False
+                    break
+        if balanced:
+            text = text[1:-1].strip()
+        else:
+            break
+    return text
 
 
 def _looks_like_callable(text: str) -> bool:
