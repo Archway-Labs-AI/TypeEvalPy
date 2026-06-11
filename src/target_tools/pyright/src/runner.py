@@ -102,7 +102,7 @@ def process_snippet(snippet_dir: Path) -> None:
 
     insertions: list[Insertion] = []
     for i, entry in enumerate(gt):
-        ins = plan_insertion(entry, fns, source, i)
+        ins = plan_insertion(entry, fns, source, tree, i)
         if ins is not None:
             insertions.extend(ins)
 
@@ -174,8 +174,62 @@ def _returns_of(fn: ast.AST) -> list[ast.Return]:
     return out
 
 
+def _resolve_variable_position(
+    tree: ast.Module, line: int, name: str, source: str
+) -> tuple[int, str]:
+    """Find where to insert a reveal_type for a variable defined at GT line.
+
+    GT reports the *first* line a variable's binding statement begins on; for
+    multi-line list/dict/call assignments and for-loop binders, that's not a
+    safe place to inject `reveal_type(<name>)`:
+
+      - ``data = [\\n  {...},\\n  ...\\n]`` -- inserting after the first line
+        puts the call inside the open list literal. Use the assignment's
+        ``end_lineno`` instead.
+      - ``for city, group in data:\\n    ...`` -- the for-target binds inside
+        the loop body. Insert before the body's first statement at body
+        indent, not at the for-statement's indent.
+
+    Returns (after_line, indent). Falls back to GT line + same-line indent for
+    cases the AST doesn't cleanly disambiguate.
+    """
+    default = (line, leading_indent(source, line))
+    for node in ast.walk(tree):
+        node_line = getattr(node, "lineno", None)
+        if node_line != line:
+            continue
+        # Multi-line assignment: insert after the closing punctuation.
+        if isinstance(node, (ast.Assign, ast.AugAssign, ast.AnnAssign)):
+            end = getattr(node, "end_lineno", None)
+            if end and end > line:
+                return end, leading_indent(source, line)
+        # For-loop target binds inside the body.
+        if isinstance(node, (ast.For, ast.AsyncFor)) and _target_binds_name(node.target, name):
+            if node.body:
+                first = node.body[0]
+                return first.lineno - 1, " " * first.col_offset
+        # With-statement target (``with foo as x:``) — same body-scope rule.
+        if isinstance(node, ast.With) and node.body:
+            for item in node.items:
+                if item.optional_vars is not None and _target_binds_name(item.optional_vars, name):
+                    first = node.body[0]
+                    return first.lineno - 1, " " * first.col_offset
+    return default
+
+
+def _target_binds_name(target: ast.AST, name: str) -> bool:
+    """True if ``name`` appears in an assignment-target subtree."""
+    if isinstance(target, ast.Name):
+        return target.id == name
+    if isinstance(target, ast.Starred):
+        return _target_binds_name(target.value, name)
+    if isinstance(target, (ast.Tuple, ast.List)):
+        return any(_target_binds_name(t, name) for t in target.elts)
+    return False
+
+
 def plan_insertion(
-    entry: dict, fns: dict[str, FnInfo], source: str, gt_index: int
+    entry: dict, fns: dict[str, FnInfo], source: str, tree: ast.Module, gt_index: int
 ) -> list[Insertion] | None:
     """Decide where (and what) to reveal for one GT entry."""
     kind, name, fn_name = entry_kind(entry)
@@ -184,8 +238,8 @@ def plan_insertion(
 
     line = entry.get("line_number")
     if kind == "variable":
-        indent = leading_indent(source, line)
-        return [Insertion(after_line=line, indent=indent, expr=name, gt_index=gt_index)]
+        after_line, indent = _resolve_variable_position(tree, line, name, source)
+        return [Insertion(after_line=after_line, indent=indent, expr=name, gt_index=gt_index)]
     if kind == "parameter":
         fn = fns.get(fn_name)
         if fn is None or fn.body_first_line < 0:

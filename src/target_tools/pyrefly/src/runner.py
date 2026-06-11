@@ -100,7 +100,7 @@ def process_snippet(snippet_dir: Path) -> None:
 
     insertions: list[Insertion] = []
     for i, entry in enumerate(gt):
-        ins = plan_insertion(entry, fns, source, i)
+        ins = plan_insertion(entry, fns, source, tree, i)
         if ins is not None:
             insertions.extend(ins)
 
@@ -171,8 +171,50 @@ def _returns_of(fn: ast.AST) -> list[ast.Return]:
     return out
 
 
+def _resolve_variable_position(
+    tree: ast.Module, line: int, name: str, source: str
+) -> tuple[int, str]:
+    """Find where to insert a reveal_type for a variable defined at GT line.
+
+    GT reports the first line a variable's binding statement begins on; for
+    multi-line list/dict/call assignments and for-loop binders, that isn't a
+    safe place to inject `reveal_type(<name>)`. See the pyright runner's copy
+    of this helper for the full discussion; we keep parallel implementations
+    so each tool's runner stays standalone.
+    """
+    default = (line, leading_indent(source, line))
+    for node in ast.walk(tree):
+        node_line = getattr(node, "lineno", None)
+        if node_line != line:
+            continue
+        if isinstance(node, (ast.Assign, ast.AugAssign, ast.AnnAssign)):
+            end = getattr(node, "end_lineno", None)
+            if end and end > line:
+                return end, leading_indent(source, line)
+        if isinstance(node, (ast.For, ast.AsyncFor)) and _target_binds_name(node.target, name):
+            if node.body:
+                first = node.body[0]
+                return first.lineno - 1, " " * first.col_offset
+        if isinstance(node, ast.With) and node.body:
+            for item in node.items:
+                if item.optional_vars is not None and _target_binds_name(item.optional_vars, name):
+                    first = node.body[0]
+                    return first.lineno - 1, " " * first.col_offset
+    return default
+
+
+def _target_binds_name(target: ast.AST, name: str) -> bool:
+    if isinstance(target, ast.Name):
+        return target.id == name
+    if isinstance(target, ast.Starred):
+        return _target_binds_name(target.value, name)
+    if isinstance(target, (ast.Tuple, ast.List)):
+        return any(_target_binds_name(t, name) for t in target.elts)
+    return False
+
+
 def plan_insertion(
-    entry: dict, fns: dict[str, FnInfo], source: str, gt_index: int
+    entry: dict, fns: dict[str, FnInfo], source: str, tree: ast.Module, gt_index: int
 ) -> list[Insertion] | None:
     kind, name, fn_name = entry_kind(entry)
     if kind is None:
@@ -180,8 +222,8 @@ def plan_insertion(
 
     line = entry.get("line_number")
     if kind == "variable":
-        indent = leading_indent(source, line)
-        return [Insertion(after_line=line, indent=indent, expr=name, gt_index=gt_index)]
+        after_line, indent = _resolve_variable_position(tree, line, name, source)
+        return [Insertion(after_line=after_line, indent=indent, expr=name, gt_index=gt_index)]
     if kind == "parameter":
         fn = fns.get(fn_name)
         if fn is None or fn.body_first_line < 0:
