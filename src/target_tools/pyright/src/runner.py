@@ -591,6 +591,12 @@ def normalize_class_name(name: str) -> str:
     """
     if name.startswith("builtins."):
         name = name[len("builtins."):]
+    # Snippets are always copied into /tmp/<tool>_work/snippet/main.py, so
+    # same-file class names come back as main.<X>. Strip that prefix —
+    # GT uses the bare name for in-module references and a real module
+    # prefix only for cross-module imports.
+    elif name.startswith("main."):
+        name = name[len("main."):]
     bare = name.rsplit(".", 1)[-1]
     low = bare.lower()
     if low in {"int", "str", "float", "bool", "bytes", "complex",
