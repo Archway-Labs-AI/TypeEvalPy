@@ -1,0 +1,27 @@
+========================================================================
+GT-SHAPE FIX — BEFORE / AFTER VALIDATION
+========================================================================
+
+(1) Corpus-wide GT-shape-vs-TRUTH mismatches
+    BEFORE fix:  756 records
+                 720  R1-shape-function->variable
+                  36  R2-type-from-cpython
+    AFTER  fix:    0 records   (idempotent re-audit)
+
+(3a) imports cluster scoring-recovery (corrected GT vs engine run-34 prediction)
+     36/36 corrected records now EQUAL the engine prediction -> EXACT
+
+(3b) assignments cluster scoring-recovery
+     line-28 twin (`a`, variable-keyed, identical `a=func1` binding):
+       EXACT with predicted ["callable"] in run 34: 720/720 files
+     -> the corrected line-33 record is now variable-keyed too, so the adapter
+        compares the SAME engine binding (callable) == GT callable -> EXACT.
+     direct engine replay (sample of 30 of 720 files):
+       engine emits `a@row33 = callable`: 30/30
+
+(4) No-regression
+     records changed: 756 (720 record-shape + 36 type-value)
+     AFTER re-audit changes: 0 (nothing left to fix, nothing over-applied)
+     git diff confirms 0 line_number/col_offset edits, record counts stable.
+
+DONE.

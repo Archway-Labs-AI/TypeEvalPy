@@ -165,7 +165,7 @@
         "file": "main.py",
         "line_number": 33,
         "col_offset": 1,
-        "function": "a",
+        "variable": "a",
         "type": [
             "callable"
         ]

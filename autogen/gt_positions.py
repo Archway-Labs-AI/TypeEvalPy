@@ -322,6 +322,50 @@ def resolve_facts(facts, index):
     return out
 
 
+def rederive_kinds(source, facts):
+    """Re-key GT records whose SHAPE (which kind-key they carry) is stale relative
+    to the AST, in place. Returns ``facts``.
+
+    A record carrying ONLY a ``function`` key (no ``variable``/``parameter``) maps
+    to the benchmark adapter's ``kind="return"`` and MUST annotate a real function
+    *definition*. If the generated AST instead shows the name is an assignment
+    Store target (not a ``def``), the record is a mis-keyed variable: rename its
+    ``function`` key to ``variable`` (preserving order, name, position and type).
+
+    WHY: the ``recursive_tuple`` rebind ``a, (b, (c, d)) = func1, ...`` of a name
+    that was previously *called* (``a()``) was historically emitted with the
+    ``function`` key. The adapter then routes it through return-type resolution and
+    reports the *called* function's return type (a concrete ``int``/``float``/...)
+    instead of comparing the engine's correctly-emitted ``callable`` binding —
+    a spurious TYPE_MISS. The fix is the same philosophy as ``rederive_facts``:
+    stop trusting the inherited template shape; re-derive it from the AST.
+
+    This is the generator-time hook: call it with the generated ``main.py`` text
+    and the ground-truth list BEFORE ``rederive_facts`` (and before writing the
+    ``*_gt.json``).
+    """
+    try:
+        parse_src = re.sub(r"<value\d+>", "1", source) if "<value" in source else source
+        tree = ast.parse(parse_src)
+    except SyntaxError:
+        return facts
+    def_sites, store_targets = set(), set()
+    for node in ast.walk(tree):
+        if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
+            def_sites.add((node.lineno, node.name))
+        elif isinstance(node, ast.Name) and isinstance(node.ctx, ast.Store):
+            store_targets.add((node.lineno, node.id))
+    for fact in facts:
+        if "function" in fact and "variable" not in fact and "parameter" not in fact:
+            name, line = fact["function"], fact.get("line_number")
+            if (line, name) not in def_sites and (line, name) in store_targets:
+                rekeyed = [("variable" if k == "function" else k, v)
+                           for k, v in list(fact.items())]
+                fact.clear()
+                fact.update(rekeyed)
+    return facts
+
+
 def rederive_facts(source, facts):
     """Rewrite ``line_number``/``col_offset`` of every fact in ``facts`` in place
     to the AST-true position derived from ``source``. Facts that cannot be mapped

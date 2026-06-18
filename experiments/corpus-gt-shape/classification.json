@@ -1,0 +1,730 @@
+{
+  "_meta": {
+    "engine_replay": true,
+    "engine_src": "/Users/remote/Technical_Projects/Archway-worktrees/engine-work"
+  },
+  "assignments": [
+    {
+      "suite_path": "assignments/recursive_tuple_1_100_int_tuple_float_list_dict",
+      "line": 33,
+      "name": "a",
+      "adapter_kind_from_GT": "return",
+      "gt_record_keys": [
+        "function"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "name-or-tuple"
+      },
+      "cpython_type": "callable",
+      "gt_declared_type": [
+        "callable"
+      ],
+      "engine_raw_binding": [
+        "callable"
+      ],
+      "adapter_predicted_in_db": [
+        "int"
+      ],
+      "verdict": "GT-SHAPE BUG (record-shape: function->variable)"
+    },
+    {
+      "suite_path": "assignments/recursive_tuple_1_144_float_int_tuple_dict_list",
+      "line": 33,
+      "name": "a",
+      "adapter_kind_from_GT": "return",
+      "gt_record_keys": [
+        "function"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "name-or-tuple"
+      },
+      "cpython_type": "callable",
+      "gt_declared_type": [
+        "callable"
+      ],
+      "engine_raw_binding": [
+        "callable"
+      ],
+      "adapter_predicted_in_db": [
+        "float"
+      ],
+      "verdict": "GT-SHAPE BUG (record-shape: function->variable)"
+    },
+    {
+      "suite_path": "assignments/recursive_tuple_1_188_float_list_tuple_int_dict",
+      "line": 33,
+      "name": "a",
+      "adapter_kind_from_GT": "return",
+      "gt_record_keys": [
+        "function"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "name-or-tuple"
+      },
+      "cpython_type": "callable",
+      "gt_declared_type": [
+        "callable"
+      ],
+      "engine_raw_binding": [
+        "callable"
+      ],
+      "adapter_predicted_in_db": [
+        "float"
+      ],
+      "verdict": "GT-SHAPE BUG (record-shape: function->variable)"
+    },
+    {
+      "suite_path": "assignments/recursive_tuple_1_230_float_tuple_list_int_dict",
+      "line": 33,
+      "name": "a",
+      "adapter_kind_from_GT": "return",
+      "gt_record_keys": [
+        "function"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "name-or-tuple"
+      },
+      "cpython_type": "callable",
+      "gt_declared_type": [
+        "callable"
+      ],
+      "engine_raw_binding": [
+        "callable"
+      ],
+      "adapter_predicted_in_db": [
+        "float"
+      ],
+      "verdict": "GT-SHAPE BUG (record-shape: function->variable)"
+    },
+    {
+      "suite_path": "assignments/recursive_tuple_1_274_str_float_list_dict_tuple",
+      "line": 33,
+      "name": "a",
+      "adapter_kind_from_GT": "return",
+      "gt_record_keys": [
+        "function"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "name-or-tuple"
+      },
+      "cpython_type": "callable",
+      "gt_declared_type": [
+        "callable"
+      ],
+      "engine_raw_binding": [
+        "callable"
+      ],
+      "adapter_predicted_in_db": [
+        "str"
+      ],
+      "verdict": "GT-SHAPE BUG (record-shape: function->variable)"
+    },
+    {
+      "suite_path": "assignments/recursive_tuple_1_317_str_dict_int_tuple_float",
+      "line": 33,
+      "name": "a",
+      "adapter_kind_from_GT": "return",
+      "gt_record_keys": [
+        "function"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "name-or-tuple"
+      },
+      "cpython_type": "callable",
+      "gt_declared_type": [
+        "callable"
+      ],
+      "engine_raw_binding": [
+        "callable"
+      ],
+      "adapter_predicted_in_db": [
+        "str"
+      ],
+      "verdict": "GT-SHAPE BUG (record-shape: function->variable)"
+    },
+    {
+      "suite_path": "assignments/recursive_tuple_1_360_str_tuple_dict_list_float",
+      "line": 33,
+      "name": "a",
+      "adapter_kind_from_GT": "return",
+      "gt_record_keys": [
+        "function"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "name-or-tuple"
+      },
+      "cpython_type": "callable",
+      "gt_declared_type": [
+        "callable"
+      ],
+      "engine_raw_binding": [
+        "callable"
+      ],
+      "adapter_predicted_in_db": [
+        "str"
+      ],
+      "verdict": "GT-SHAPE BUG (record-shape: function->variable)"
+    },
+    {
+      "suite_path": "assignments/recursive_tuple_1_403_list_float_tuple_int_str",
+      "line": 33,
+      "name": "a",
+      "adapter_kind_from_GT": "return",
+      "gt_record_keys": [
+        "function"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "name-or-tuple"
+      },
+      "cpython_type": "callable",
+      "gt_declared_type": [
+        "callable"
+      ],
+      "engine_raw_binding": [
+        "callable"
+      ],
+      "adapter_predicted_in_db": [
+        "list"
+      ],
+      "verdict": "GT-SHAPE BUG (record-shape: function->variable)"
+    },
+    {
+      "suite_path": "assignments/recursive_tuple_1_447_list_dict_str_float_int",
+      "line": 33,
+      "name": "a",
+      "adapter_kind_from_GT": "return",
+      "gt_record_keys": [
+        "function"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "name-or-tuple"
+      },
+      "cpython_type": "callable",
+      "gt_declared_type": [
+        "callable"
+      ],
+      "engine_raw_binding": [
+        "callable"
+      ],
+      "adapter_predicted_in_db": [
+        "list"
+      ],
+      "verdict": "GT-SHAPE BUG (record-shape: function->variable)"
+    },
+    {
+      "suite_path": "assignments/recursive_tuple_1_490_dict_int_str_list_tuple",
+      "line": 33,
+      "name": "a",
+      "adapter_kind_from_GT": "return",
+      "gt_record_keys": [
+        "function"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "name-or-tuple"
+      },
+      "cpython_type": "callable",
+      "gt_declared_type": [
+        "callable"
+      ],
+      "engine_raw_binding": [
+        "callable"
+      ],
+      "adapter_predicted_in_db": [
+        "dict"
+      ],
+      "verdict": "GT-SHAPE BUG (record-shape: function->variable)"
+    },
+    {
+      "suite_path": "assignments/recursive_tuple_1_533_dict_str_int_tuple_float",
+      "line": 33,
+      "name": "a",
+      "adapter_kind_from_GT": "return",
+      "gt_record_keys": [
+        "function"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "name-or-tuple"
+      },
+      "cpython_type": "callable",
+      "gt_declared_type": [
+        "callable"
+      ],
+      "engine_raw_binding": [
+        "callable"
+      ],
+      "adapter_predicted_in_db": [
+        "dict"
+      ],
+      "verdict": "GT-SHAPE BUG (record-shape: function->variable)"
+    },
+    {
+      "suite_path": "assignments/recursive_tuple_1_577_dict_tuple_int_float_str",
+      "line": 33,
+      "name": "a",
+      "adapter_kind_from_GT": "return",
+      "gt_record_keys": [
+        "function"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "name-or-tuple"
+      },
+      "cpython_type": "callable",
+      "gt_declared_type": [
+        "callable"
+      ],
+      "engine_raw_binding": [
+        "callable"
+      ],
+      "adapter_predicted_in_db": [
+        "dict"
+      ],
+      "verdict": "GT-SHAPE BUG (record-shape: function->variable)"
+    },
+    {
+      "suite_path": "assignments/recursive_tuple_1_61_int_list_dict_float_str",
+      "line": 33,
+      "name": "a",
+      "adapter_kind_from_GT": "return",
+      "gt_record_keys": [
+        "function"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "name-or-tuple"
+      },
+      "cpython_type": "callable",
+      "gt_declared_type": [
+        "callable"
+      ],
+      "engine_raw_binding": [
+        "callable"
+      ],
+      "adapter_predicted_in_db": [
+        "int"
+      ],
+      "verdict": "GT-SHAPE BUG (record-shape: function->variable)"
+    },
+    {
+      "suite_path": "assignments/recursive_tuple_1_663_tuple_str_list_float_int",
+      "line": 33,
+      "name": "a",
+      "adapter_kind_from_GT": "return",
+      "gt_record_keys": [
+        "function"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "name-or-tuple"
+      },
+      "cpython_type": "callable",
+      "gt_declared_type": [
+        "callable"
+      ],
+      "engine_raw_binding": [
+        "callable"
+      ],
+      "adapter_predicted_in_db": [
+        "tuple"
+      ],
+      "verdict": "GT-SHAPE BUG (record-shape: function->variable)"
+    },
+    {
+      "suite_path": "assignments/recursive_tuple_1_706_tuple_dict_float_str_list",
+      "line": 33,
+      "name": "a",
+      "adapter_kind_from_GT": "return",
+      "gt_record_keys": [
+        "function"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "name-or-tuple"
+      },
+      "cpython_type": "callable",
+      "gt_declared_type": [
+        "callable"
+      ],
+      "engine_raw_binding": [
+        "callable"
+      ],
+      "adapter_predicted_in_db": [
+        "tuple"
+      ],
+      "verdict": "GT-SHAPE BUG (record-shape: function->variable)"
+    }
+  ],
+  "imports": [
+    {
+      "suite_path": "imports/import_as_1_10_float_list",
+      "line": 11,
+      "name": "a",
+      "adapter_kind_from_GT": "variable",
+      "gt_record_keys": [
+        "variable"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "call"
+      },
+      "cpython_type": "float",
+      "gt_declared_type": [
+        "str"
+      ],
+      "engine_raw_binding": [
+        "float"
+      ],
+      "adapter_predicted_in_db": [
+        "float"
+      ],
+      "verdict": "GT-SHAPE BUG (type-value: hardcoded wrong type)"
+    },
+    {
+      "suite_path": "imports/import_as_1_12_float_tuple",
+      "line": 11,
+      "name": "a",
+      "adapter_kind_from_GT": "variable",
+      "gt_record_keys": [
+        "variable"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "call"
+      },
+      "cpython_type": "float",
+      "gt_declared_type": [
+        "str"
+      ],
+      "engine_raw_binding": [
+        "float"
+      ],
+      "adapter_predicted_in_db": [
+        "float"
+      ],
+      "verdict": "GT-SHAPE BUG (type-value: hardcoded wrong type)"
+    },
+    {
+      "suite_path": "imports/import_as_1_1_int_float",
+      "line": 11,
+      "name": "a",
+      "adapter_kind_from_GT": "variable",
+      "gt_record_keys": [
+        "variable"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "call"
+      },
+      "cpython_type": "int",
+      "gt_declared_type": [
+        "str"
+      ],
+      "engine_raw_binding": [
+        "int"
+      ],
+      "adapter_predicted_in_db": [
+        "int"
+      ],
+      "verdict": "GT-SHAPE BUG (type-value: hardcoded wrong type)"
+    },
+    {
+      "suite_path": "imports/import_as_1_21_bool_str",
+      "line": 11,
+      "name": "a",
+      "adapter_kind_from_GT": "variable",
+      "gt_record_keys": [
+        "variable"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "call"
+      },
+      "cpython_type": "bool",
+      "gt_declared_type": [
+        "str"
+      ],
+      "engine_raw_binding": [
+        "bool"
+      ],
+      "adapter_predicted_in_db": [
+        "bool"
+      ],
+      "verdict": "GT-SHAPE BUG (type-value: hardcoded wrong type)"
+    },
+    {
+      "suite_path": "imports/import_as_1_23_bool_dict",
+      "line": 11,
+      "name": "a",
+      "adapter_kind_from_GT": "variable",
+      "gt_record_keys": [
+        "variable"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "call"
+      },
+      "cpython_type": "bool",
+      "gt_declared_type": [
+        "str"
+      ],
+      "engine_raw_binding": [
+        "bool"
+      ],
+      "adapter_predicted_in_db": [
+        "bool"
+      ],
+      "verdict": "GT-SHAPE BUG (type-value: hardcoded wrong type)"
+    },
+    {
+      "suite_path": "imports/import_as_1_25_list_int",
+      "line": 11,
+      "name": "a",
+      "adapter_kind_from_GT": "variable",
+      "gt_record_keys": [
+        "variable"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "call"
+      },
+      "cpython_type": "list",
+      "gt_declared_type": [
+        "str"
+      ],
+      "engine_raw_binding": [
+        "list"
+      ],
+      "adapter_predicted_in_db": [
+        "list"
+      ],
+      "verdict": "GT-SHAPE BUG (type-value: hardcoded wrong type)"
+    },
+    {
+      "suite_path": "imports/import_as_1_27_list_str",
+      "line": 11,
+      "name": "a",
+      "adapter_kind_from_GT": "variable",
+      "gt_record_keys": [
+        "variable"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "call"
+      },
+      "cpython_type": "list",
+      "gt_declared_type": [
+        "str"
+      ],
+      "engine_raw_binding": [
+        "list"
+      ],
+      "adapter_predicted_in_db": [
+        "list"
+      ],
+      "verdict": "GT-SHAPE BUG (type-value: hardcoded wrong type)"
+    },
+    {
+      "suite_path": "imports/import_as_1_29_list_dict",
+      "line": 11,
+      "name": "a",
+      "adapter_kind_from_GT": "variable",
+      "gt_record_keys": [
+        "variable"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "call"
+      },
+      "cpython_type": "list",
+      "gt_declared_type": [
+        "str"
+      ],
+      "engine_raw_binding": [
+        "list"
+      ],
+      "adapter_predicted_in_db": [
+        "list"
+      ],
+      "verdict": "GT-SHAPE BUG (type-value: hardcoded wrong type)"
+    },
+    {
+      "suite_path": "imports/import_as_1_30_list_tuple",
+      "line": 11,
+      "name": "a",
+      "adapter_kind_from_GT": "variable",
+      "gt_record_keys": [
+        "variable"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "call"
+      },
+      "cpython_type": "list",
+      "gt_declared_type": [
+        "str"
+      ],
+      "engine_raw_binding": [
+        "list"
+      ],
+      "adapter_predicted_in_db": [
+        "list"
+      ],
+      "verdict": "GT-SHAPE BUG (type-value: hardcoded wrong type)"
+    },
+    {
+      "suite_path": "imports/import_as_1_32_dict_float",
+      "line": 11,
+      "name": "a",
+      "adapter_kind_from_GT": "variable",
+      "gt_record_keys": [
+        "variable"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "call"
+      },
+      "cpython_type": "dict",
+      "gt_declared_type": [
+        "str"
+      ],
+      "engine_raw_binding": [
+        "dict"
+      ],
+      "adapter_predicted_in_db": [
+        "dict"
+      ],
+      "verdict": "GT-SHAPE BUG (type-value: hardcoded wrong type)"
+    },
+    {
+      "suite_path": "imports/import_as_1_34_dict_bool",
+      "line": 11,
+      "name": "a",
+      "adapter_kind_from_GT": "variable",
+      "gt_record_keys": [
+        "variable"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "call"
+      },
+      "cpython_type": "dict",
+      "gt_declared_type": [
+        "str"
+      ],
+      "engine_raw_binding": [
+        "dict"
+      ],
+      "adapter_predicted_in_db": [
+        "dict"
+      ],
+      "verdict": "GT-SHAPE BUG (type-value: hardcoded wrong type)"
+    },
+    {
+      "suite_path": "imports/import_as_1_36_dict_tuple",
+      "line": 11,
+      "name": "a",
+      "adapter_kind_from_GT": "variable",
+      "gt_record_keys": [
+        "variable"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "call"
+      },
+      "cpython_type": "dict",
+      "gt_declared_type": [
+        "str"
+      ],
+      "engine_raw_binding": [
+        "dict"
+      ],
+      "adapter_predicted_in_db": [
+        "dict"
+      ],
+      "verdict": "GT-SHAPE BUG (type-value: hardcoded wrong type)"
+    },
+    {
+      "suite_path": "imports/import_as_1_38_tuple_float",
+      "line": 11,
+      "name": "a",
+      "adapter_kind_from_GT": "variable",
+      "gt_record_keys": [
+        "variable"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "call"
+      },
+      "cpython_type": "tuple",
+      "gt_declared_type": [
+        "str"
+      ],
+      "engine_raw_binding": [
+        "tuple"
+      ],
+      "adapter_predicted_in_db": [
+        "tuple"
+      ],
+      "verdict": "GT-SHAPE BUG (type-value: hardcoded wrong type)"
+    },
+    {
+      "suite_path": "imports/import_as_1_3_int_bool",
+      "line": 11,
+      "name": "a",
+      "adapter_kind_from_GT": "variable",
+      "gt_record_keys": [
+        "variable"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "call"
+      },
+      "cpython_type": "int",
+      "gt_declared_type": [
+        "str"
+      ],
+      "engine_raw_binding": [
+        "int"
+      ],
+      "adapter_predicted_in_db": [
+        "int"
+      ],
+      "verdict": "GT-SHAPE BUG (type-value: hardcoded wrong type)"
+    },
+    {
+      "suite_path": "imports/import_as_1_41_tuple_list",
+      "line": 11,
+      "name": "a",
+      "adapter_kind_from_GT": "variable",
+      "gt_record_keys": [
+        "variable"
+      ],
+      "ast_truth": {
+        "kind": "assign-target",
+        "rhs_shape": "call"
+      },
+      "cpython_type": "tuple",
+      "gt_declared_type": [
+        "str"
+      ],
+      "engine_raw_binding": [
+        "tuple"
+      ],
+      "adapter_predicted_in_db": [
+        "tuple"
+      ],
+      "verdict": "GT-SHAPE BUG (type-value: hardcoded wrong type)"
+    }
+  ]
+}
