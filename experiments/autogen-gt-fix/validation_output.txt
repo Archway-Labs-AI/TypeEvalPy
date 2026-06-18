@@ -1,0 +1,79 @@
+====================================================================================================
+WORKED-EXAMPLE BEFORE/AFTER TABLE  (OLD from git HEAD; NEW from fixed file; AST = independent ast reading)
+====================================================================================================
+
+### assignments/starred_1_293_dict_tuple_float_str
+  fact                             OLD-GT      NEW-GT   AST-truth  match
+  func func1                       (2, 5)      (2, 5)      (2, 5)  OK
+  func func2                       (6, 5)      (6, 5)      (6, 5)  OK
+  func func3                      (10, 5)     (10, 5)     (10, 5)  OK
+  func func4                      (14, 5)     (14, 5)     (14, 5)  OK
+  var a                           (18, 1)     (17, 1)     (17, 1)  OK  <-- moved
+  var b                           (18, 5)     (17, 5)     (17, 5)  OK  <-- moved
+  var b[0]                        (18, 8)     (17, 5)     (17, 5)  ok(base)  <-- moved
+  var b[1]                        (18, 8)     (17, 5)     (17, 5)  ok(base)  <-- moved
+  var c                           (18, 8)     (17, 8)     (17, 8)  OK  <-- moved
+  var d                           (20, 1)     (19, 1)     (19, 1)  OK  <-- moved
+  var d['gfnsm']                  (20, 1)     (19, 1)     (19, 1)  ok(base)  <-- moved
+  var d['bdmtr']                  (20, 1)     (19, 1)     (19, 1)  ok(base)  <-- moved
+  var d['dovvx']                  (20, 1)     (19, 1)     (19, 1)  ok(base)  <-- moved
+  var e                           (21, 1)     (20, 1)     (20, 1)  OK  <-- moved
+  var e[0]                        (21, 1)     (20, 1)     (20, 1)  ok(base)  <-- moved
+  var e[1]                        (21, 1)     (20, 1)     (20, 1)  ok(base)  <-- moved
+  var e[2]                        (21, 1)     (20, 1)     (20, 1)  ok(base)  <-- moved
+  var f                           (22, 1)     (21, 1)     (21, 1)  OK  <-- moved
+  var g                           (23, 1)     (22, 1)     (22, 1)  OK  <-- moved
+
+### assignments/recursive_tuple_1_100_int_tuple_float_list_dict
+  fact                             OLD-GT      NEW-GT   AST-truth  match
+  func func1                       (4, 5)      (4, 5)      (4, 5)  OK
+  func func2                       (8, 5)      (8, 5)      (8, 5)  OK
+  func func3                      (12, 5)     (12, 5)     (12, 5)  OK
+  func func4                      (16, 5)     (16, 5)     (16, 5)  OK
+  func func5                      (20, 5)     (20, 5)     (20, 5)  OK
+  func func6                      (24, 5)     (24, 5)     (24, 5)  OK
+  var a                           (28, 1)     (28, 1)     (28, 1)  OK
+  var b                           (28, 5)     (28, 5)     (28, 5)  OK
+  var c                           (28, 8)     (28, 8)     (28, 8)  OK
+  var i                           (29, 1)     (29, 1)     (29, 1)  OK
+  var j                           (30, 1)     (30, 1)     (30, 1)  OK
+  var j[0]                        (30, 1)     (30, 1)     (30, 1)  ok(base)
+  var j[1]                        (30, 1)     (30, 1)     (30, 1)  ok(base)
+  var j[2]                        (30, 1)     (30, 1)     (30, 1)  ok(base)
+  var k                           (31, 1)     (31, 1)     (31, 1)  OK
+  func a                          (33, 1)     (33, 1)        None  OK
+  var b                           (33, 5)     (33, 5)     (33, 5)  OK
+  var c                           (33, 9)     (33, 9)     (33, 9)  OK
+  var d                          (33, 12)    (33, 12)    (33, 12)  OK
+  var h                           (35, 1)     (35, 1)     (35, 1)  OK
+  var h[0]                        (35, 1)     (35, 1)     (35, 1)  ok(base)
+  var h[1]                        (35, 1)     (35, 1)     (35, 1)  ok(base)
+  var h[2]                        (35, 1)     (35, 1)     (35, 1)  ok(base)
+  var f                           (37, 1)     (37, 1)     (37, 1)  OK
+  var b                           (37, 5)     (37, 4)     (37, 4)  OK  <-- moved
+  var c                           (37, 8)     (37, 8)     (37, 8)  OK
+  var e                          (37, 11)    (37, 11)    (37, 11)  OK
+  var l                           (39, 1)     (39, 1)     (39, 1)  OK
+  var m                           (40, 1)     (40, 1)     (40, 1)  OK
+  var m['qagzo']                  (40, 1)     (40, 1)     (40, 1)  ok(base)
+  var m['oubiy']                  (40, 1)     (40, 1)     (40, 1)  ok(base)
+  var m['ajhkf']                  (40, 1)     (40, 1)     (40, 1)  ok(base)
+
+### assignments/augmented_1_4_list
+  fact                             OLD-GT      NEW-GT   AST-truth  match
+  func func1                       (5, 5)      (5, 5)      (5, 5)  OK
+  func1::a                        (5, 11)     (5, 11)     (5, 11)  OK
+  func1::a                         (6, 5)      (6, 5)      (6, 5)  OK
+  var b                           (11, 1)     (10, 1)     (10, 1)  OK  <-- moved
+  var b[0]                        (11, 1)     (10, 1)     (10, 1)  ok(base)  <-- moved
+  var b[1]                        (11, 1)     (10, 1)     (10, 1)  ok(base)  <-- moved
+  var b[2]                        (11, 1)     (10, 1)     (10, 1)  ok(base)  <-- moved
+
+====================================================================================================
+CORPUS-WIDE AST-vs-GT POSITION AUDIT
+====================================================================================================
+  position mismatches BEFORE fix : 6352
+  position mismatches AFTER  fix : 0
+  unmatched (out-of-scope) facts : 558
+
+  result: PASS

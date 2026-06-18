@@ -1,0 +1,6755 @@
+{
+  "stats": {
+    "files": 5453,
+    "facts": 77268,
+    "already_correct": 76710,
+    "corrected": 0,
+    "unmatched": 558,
+    "files_changed": 0
+  },
+  "mismatches": [],
+  "unmatched": [
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/args/multiple_1_1_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 4,
+        "col_offset": 19,
+        "function": "my_sum",
+        "parameter": "integers",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/args/multiple_1_2_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 4,
+        "col_offset": 19,
+        "function": "my_sum",
+        "parameter": "integers",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/args/multiple_1_3_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 4,
+        "col_offset": 19,
+        "function": "my_sum",
+        "parameter": "integers",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/args/multiple_1_4_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 4,
+        "col_offset": 19,
+        "function": "my_sum",
+        "parameter": "integers",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_10_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_11_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_12_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_13_str_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_14_str_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_15_str_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_16_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_17_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_18_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_19_bool_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_1_int_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_20_bool_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_21_bool_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_22_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_23_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_24_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_25_list_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_26_list_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_27_list_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_28_list_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_29_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_2_int_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_30_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_31_dict_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_32_dict_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_33_dict_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_34_dict_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_35_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_36_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_37_tuple_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_38_tuple_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_39_tuple_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_3_int_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_40_tuple_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_41_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_42_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_4_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_5_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_6_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_7_float_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_8_float_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/decorators/nested_decorators_1_9_float_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 10,
+        "parameter": "f",
+        "function": "dec",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/compile_1_1_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 1,
+        "variable": "a",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/compile_1_2_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 1,
+        "variable": "a",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/compile_1_3_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 1,
+        "variable": "a",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/compile_1_4_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 1,
+        "variable": "a",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/compile_1_5_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 1,
+        "variable": "a",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/compile_1_5_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 1,
+        "variable": "a[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/compile_1_5_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 1,
+        "variable": "a[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/compile_1_5_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 1,
+        "variable": "a[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/compile_1_6_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 1,
+        "variable": "a",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/compile_1_6_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 1,
+        "variable": "a['hfraq']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/compile_1_6_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 1,
+        "variable": "a['ztzfs']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/compile_1_6_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 1,
+        "variable": "a['kbkeu']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/compile_1_7_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 1,
+        "variable": "a",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/compile_1_7_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 1,
+        "variable": "a[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/compile_1_7_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 1,
+        "variable": "a[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/compile_1_7_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 1,
+        "variable": "a[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/exec_1_1_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 5,
+        "col_offset": 1,
+        "variable": "a",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/exec_1_2_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 5,
+        "col_offset": 1,
+        "variable": "a",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/exec_1_3_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 5,
+        "col_offset": 1,
+        "variable": "a",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/exec_1_4_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 5,
+        "col_offset": 1,
+        "variable": "a",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/exec_1_5_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 5,
+        "col_offset": 1,
+        "variable": "a",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/exec_1_5_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 5,
+        "col_offset": 1,
+        "variable": "a[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/exec_1_5_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 5,
+        "col_offset": 1,
+        "variable": "a[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/exec_1_5_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 5,
+        "col_offset": 1,
+        "variable": "a[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/exec_1_6_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 5,
+        "col_offset": 1,
+        "variable": "a",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/exec_1_6_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 5,
+        "col_offset": 1,
+        "variable": "a['ajnpm']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/exec_1_6_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 5,
+        "col_offset": 1,
+        "variable": "a['vegna']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/exec_1_6_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 5,
+        "col_offset": 1,
+        "variable": "a['joxzf']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/exec_1_7_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 5,
+        "col_offset": 1,
+        "variable": "a",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/exec_1_7_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 5,
+        "col_offset": 1,
+        "variable": "a[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/exec_1_7_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 5,
+        "col_offset": 1,
+        "variable": "a[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/dynamic/exec_1_7_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 5,
+        "col_offset": 1,
+        "variable": "a[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_100_bool_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_100_bool_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_100_bool_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_100_bool_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_101_bool_str_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_102_bool_str_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_103_bool_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_103_bool_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_103_bool_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_103_bool_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_104_bool_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_104_bool_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['tqwlq']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_104_bool_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['hucgd']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_104_bool_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['hfzei']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_105_bool_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_105_bool_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_105_bool_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_105_bool_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_106_bool_list_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_107_bool_list_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_108_bool_list_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_109_bool_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_109_bool_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['uvyuk']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_109_bool_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['vmeab']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_109_bool_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['lmoup']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_10_int_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_10_int_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_10_int_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_10_int_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_110_bool_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_110_bool_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_110_bool_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_110_bool_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_111_bool_dict_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_112_bool_dict_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_113_bool_dict_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_114_bool_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_114_bool_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_114_bool_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_114_bool_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_115_bool_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_115_bool_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_115_bool_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_115_bool_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_116_bool_tuple_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_117_bool_tuple_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_118_bool_tuple_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_119_bool_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_119_bool_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_119_bool_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_119_bool_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_11_int_bool_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_120_bool_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_120_bool_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['fwuwg']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_120_bool_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['bctin']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_120_bool_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['excsn']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_121_list_int_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_122_list_int_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_123_list_int_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_124_list_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_124_list_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['ibwzq']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_124_list_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['qggpw']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_124_list_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['wctji']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_125_list_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_125_list_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_125_list_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_125_list_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_126_list_float_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_127_list_float_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_128_list_float_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_129_list_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_129_list_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['ediuz']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_129_list_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['huofo']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_129_list_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['nvlid']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_12_int_bool_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_130_list_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_130_list_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_130_list_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_130_list_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_131_list_str_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_132_list_str_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_133_list_str_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_134_list_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_134_list_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['cocwt']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_134_list_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['jowco']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_134_list_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['aivbi']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_135_list_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_135_list_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_135_list_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_135_list_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_136_list_bool_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_137_list_bool_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_138_list_bool_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_139_list_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_139_list_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['zkjue']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_139_list_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['ghzjy']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_139_list_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['lzhnx']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_13_int_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_13_int_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_13_int_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_13_int_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_140_list_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_140_list_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_140_list_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_140_list_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_141_list_dict_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_142_list_dict_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_143_list_dict_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_144_list_dict_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_145_list_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_145_list_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_145_list_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_145_list_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_146_list_tuple_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_147_list_tuple_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_148_list_tuple_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_149_list_tuple_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_14_int_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_14_int_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['uobyr']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_14_int_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['bkalr']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_14_int_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['tmuqe']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_150_list_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_150_list_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['zwnhn']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_150_list_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['fyudz']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_150_list_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['uyqjn']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_151_dict_int_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_152_dict_int_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_153_dict_int_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_154_dict_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_154_dict_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_154_dict_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_154_dict_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_155_dict_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_155_dict_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_155_dict_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_155_dict_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_156_dict_float_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_157_dict_float_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_158_dict_float_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_159_dict_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_159_dict_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_159_dict_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_159_dict_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_15_int_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_15_int_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_15_int_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_15_int_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_160_dict_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_160_dict_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_160_dict_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_160_dict_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_161_dict_str_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_162_dict_str_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_163_dict_str_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_164_dict_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_164_dict_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_164_dict_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_164_dict_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_165_dict_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_165_dict_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_165_dict_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_165_dict_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_166_dict_bool_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_167_dict_bool_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_168_dict_bool_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_169_dict_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_169_dict_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_169_dict_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_169_dict_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_16_int_list_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_170_dict_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_170_dict_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_170_dict_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_170_dict_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_171_dict_list_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_172_dict_list_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_173_dict_list_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_174_dict_list_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_175_dict_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_175_dict_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_175_dict_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_175_dict_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_176_dict_tuple_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_177_dict_tuple_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_178_dict_tuple_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_179_dict_tuple_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_17_int_list_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_180_dict_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_180_dict_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_180_dict_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_180_dict_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_181_tuple_int_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_182_tuple_int_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_183_tuple_int_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_184_tuple_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_184_tuple_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_184_tuple_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_184_tuple_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_185_tuple_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_185_tuple_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['ymoyc']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_185_tuple_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['jtfbs']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_185_tuple_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['stlwl']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_186_tuple_float_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_187_tuple_float_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_188_tuple_float_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_189_tuple_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_189_tuple_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_189_tuple_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_189_tuple_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_18_int_list_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_190_tuple_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_190_tuple_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['idhzc']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_190_tuple_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['vgkqg']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_190_tuple_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['nyysf']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_191_tuple_str_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_192_tuple_str_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_193_tuple_str_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_194_tuple_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_194_tuple_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_194_tuple_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_194_tuple_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_195_tuple_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_195_tuple_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['olagx']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_195_tuple_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['pcqdp']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_195_tuple_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['ocady']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_196_tuple_bool_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_197_tuple_bool_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_198_tuple_bool_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_199_tuple_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_199_tuple_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_199_tuple_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_199_tuple_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_19_int_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_19_int_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['vbcjr']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_19_int_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['rtxlc']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_19_int_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['oavei']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_1_int_float_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_200_tuple_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_200_tuple_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['vggdt']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_200_tuple_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['qufsw']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_200_tuple_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['gxmzu']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_201_tuple_list_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_202_tuple_list_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_203_tuple_list_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_204_tuple_list_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_205_tuple_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_205_tuple_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['xtqrr']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_205_tuple_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['ljbdt']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_205_tuple_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['xifpz']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_206_tuple_dict_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_207_tuple_dict_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_208_tuple_dict_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_209_tuple_dict_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_20_int_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_20_int_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_20_int_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_20_int_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_210_tuple_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_210_tuple_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_210_tuple_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_210_tuple_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_21_int_dict_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_22_int_dict_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_23_int_dict_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_24_int_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_24_int_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_24_int_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_24_int_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_25_int_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_25_int_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_25_int_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_25_int_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_26_int_tuple_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_27_int_tuple_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_28_int_tuple_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_29_int_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_29_int_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_29_int_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_29_int_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_2_int_float_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_30_int_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_30_int_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['ylqmd']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_30_int_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['ptasi']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_30_int_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['wbuop']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_31_float_int_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_32_float_int_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_33_float_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_33_float_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_33_float_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_33_float_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_34_float_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_34_float_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['bwaep']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_34_float_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['uheef']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_34_float_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['hfduw']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_35_float_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_35_float_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_35_float_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_35_float_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_36_float_str_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_37_float_str_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_38_float_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_38_float_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_38_float_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_38_float_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_39_float_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_39_float_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['mhmgj']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_39_float_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['zqdmg']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_39_float_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['apyjf']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_3_int_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_3_int_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_3_int_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_3_int_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_40_float_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_40_float_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_40_float_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_40_float_str_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_41_float_bool_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_42_float_bool_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_43_float_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_43_float_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_43_float_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_43_float_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_44_float_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_44_float_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['sizjs']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_44_float_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['fxcyg']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_44_float_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['yexan']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_45_float_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_45_float_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_45_float_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_45_float_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_46_float_list_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_47_float_list_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_48_float_list_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_49_float_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_49_float_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['wgxve']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_49_float_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['vynap']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_49_float_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['ssowo']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_4_int_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_4_int_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['erucp']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_4_int_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['gjjiv']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_4_int_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['qfmzy']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_50_float_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_50_float_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_50_float_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_50_float_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_51_float_dict_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_52_float_dict_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_53_float_dict_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_54_float_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_54_float_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_54_float_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_54_float_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_55_float_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_55_float_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_55_float_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_55_float_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_56_float_tuple_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_57_float_tuple_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_58_float_tuple_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_59_float_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_59_float_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_59_float_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_59_float_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_5_int_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_5_int_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_5_int_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_5_int_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_60_float_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_60_float_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['jplcv']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_60_float_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['cnxsh']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_60_float_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['nctal']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_61_str_int_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_62_str_int_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_63_str_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_63_str_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_63_str_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_63_str_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_64_str_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_64_str_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['skthq']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_64_str_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['xdixc']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_64_str_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['drbrc']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_65_str_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_65_str_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_65_str_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_65_str_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_66_str_float_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_67_str_float_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_68_str_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_68_str_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_68_str_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_68_str_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_69_str_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_69_str_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['wwdba']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_69_str_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['msbpm']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_69_str_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['hgzcw']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_6_int_str_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_70_str_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_70_str_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_70_str_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_70_str_float_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_71_str_bool_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_72_str_bool_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_73_str_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_73_str_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_73_str_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_73_str_bool_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_74_str_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_74_str_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['dtptv']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_74_str_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['dzvsi']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_74_str_bool_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['qkvjg']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_75_str_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_75_str_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_75_str_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_75_str_bool_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_76_str_list_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_77_str_list_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_78_str_list_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_79_str_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_79_str_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['uimwu']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_79_str_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['futoa']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_79_str_list_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['wmsab']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_7_int_str_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_80_str_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_80_str_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_80_str_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_80_str_list_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_81_str_dict_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_82_str_dict_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_83_str_dict_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_84_str_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_84_str_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_84_str_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_84_str_dict_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_85_str_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_85_str_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_85_str_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_85_str_dict_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_86_str_tuple_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_87_str_tuple_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_88_str_tuple_bool/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "bool"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_89_str_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_89_str_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_89_str_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_89_str_tuple_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_8_int_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_8_int_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_8_int_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_8_int_str_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_90_str_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_90_str_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['lnutz']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_90_str_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['kwqlb']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_90_str_tuple_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['stxaf']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_91_bool_int_float/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "float"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_92_bool_int_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_93_bool_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_93_bool_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_93_bool_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_93_bool_int_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_94_bool_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_94_bool_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['rixhe']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_94_bool_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['ibxxz']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_94_bool_int_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['lnfyu']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_95_bool_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "tuple"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_95_bool_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_95_bool_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_95_bool_int_tuple/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_96_bool_float_int/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_97_bool_float_str/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_98_bool_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "list"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_98_bool_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[0]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_98_bool_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[1]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_98_bool_float_list/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C[2]",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_99_bool_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_99_bool_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['yatrs']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_99_bool_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['byxus']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_99_bool_float_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['onsnh']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_9_int_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C",
+        "type": [
+          "dict"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_9_int_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['ltuvo']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_9_int_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['qptrc']",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "autogen_typeevalpy_benchmark/python_features/mro/two_parents_method_defined_1_9_int_str_dict/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 25,
+        "col_offset": 1,
+        "variable": "C['xnzpf']",
+        "type": [
+          "int"
+        ]
+      }
+    }
+  ]
+}

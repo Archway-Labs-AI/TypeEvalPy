@@ -30,7 +30,7 @@
     },
     {
         "file": "main.py",
-        "line_number": 11,
+        "line_number": 10,
         "col_offset": 1,
         "variable": "b",
         "type": [
@@ -39,7 +39,7 @@
     },
     {
         "file": "main.py",
-        "line_number": 11,
+        "line_number": 10,
         "col_offset": 1,
         "variable": "b[0]",
         "type": [
@@ -48,7 +48,7 @@
     },
     {
         "file": "main.py",
-        "line_number": 11,
+        "line_number": 10,
         "col_offset": 1,
         "variable": "b[1]",
         "type": [
@@ -57,7 +57,7 @@
     },
     {
         "file": "main.py",
-        "line_number": 11,
+        "line_number": 10,
         "col_offset": 1,
         "variable": "b[2]",
         "type": [

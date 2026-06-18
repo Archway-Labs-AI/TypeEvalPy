@@ -21,7 +21,7 @@
     {
         "file": "main.py",
         "line_number": 4,
-        "col_offset": 36,
+        "col_offset": 40,
         "function": "lambda",
         "variable": "x",
         "type": [

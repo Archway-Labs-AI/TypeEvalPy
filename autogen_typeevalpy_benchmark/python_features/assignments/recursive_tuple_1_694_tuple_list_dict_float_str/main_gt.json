@@ -245,7 +245,7 @@
     {
         "file": "main.py",
         "line_number": 37,
-        "col_offset": 5,
+        "col_offset": 4,
         "variable": "b",
         "type": [
             "callable"

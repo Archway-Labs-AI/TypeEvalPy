@@ -1,0 +1,56 @@
+AUTOGEN GT POSITION-FIX SUMMARY (AST-vs-GT audit, BEFORE fix)
+================================================================
+total annotations in corpus       : 77268
+already AST-correct (untouched)   : 70358
+position-corrected (GT->AST truth): 6352
+unmatched (out-of-scope, untouched): 558
+
+Position corrections by category:
+   6127  assignments
+    100  classes
+     84  dicts
+     16  imports
+     14  functions
+      6  kwargs
+      5  lambdas
+
+Position corrections by template family:
+   5400  assignments/starred
+    720  assignments/recursive_tuple
+     84  classes/inheritance_overriding
+     42  dicts/type_coercion
+     42  dicts/update
+     16  imports/chained_import
+      7  assignments/augmented
+      7  classes/assigned_self_call
+      7  classes/nested_class_calls
+      6  functions/default
+      6  kwargs/multiple
+      5  functions/static
+      4  lambdas/chained_calls
+      3  functions/nested
+      2  classes/abstract_class
+      1  lambdas/composition
+
+Unmatched (out-of-scope: name/type corruption or exec-string vars — NOT position bugs):
+    480  mro/two_parents_method_defined
+     42  decorators/nested_decorators
+     16  dynamic/compile
+     16  dynamic/exec
+      4  args/multiple
+
+Delta distribution of corrections (new-line minus old-line, new-col minus old-col):
+   4687  dline=-1 dcol=+0
+    720  dline=+0 dcol=-1
+    720  dline=-1 dcol=-3
+    104  dline=+0 dcol=+4
+     45  dline=-2 dcol=+0
+     42  dline=+0 dcol=-4
+     16  dline=+2 dcol=-4
+      7  dline=+10 dcol=-8
+      3  dline=+0 dcol=+6
+      3  dline=+0 dcol=+2
+      2  dline=+0 dcol=+1
+      1  dline=+0 dcol=+3
+      1  dline=+0 dcol=+8
+      1  dline=+0 dcol=+12

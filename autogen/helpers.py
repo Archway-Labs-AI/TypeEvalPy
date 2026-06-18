@@ -10,6 +10,8 @@ from tqdm import tqdm
 
 from pathlib import Path
 
+from gt_positions import rederive_facts
+
 random.seed(42)
 
 SCRIPT_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
@@ -171,6 +173,16 @@ def save_files(
     # tqdm.write(f"Saved Python code to {code_file_path}")
 
     if json_data:
+        # Re-derive every GT (line, col) from the AST of the code we just wrote,
+        # rather than trusting the positions inherited from the template. The
+        # template positions can be stale/inconsistent (and value-length-
+        # dependent positions like default-parameter columns CANNOT be inherited
+        # at all), so the on-disk file is the only correct source of truth.
+        try:
+            rederive_facts(code, json_data["ground_truth"])
+        except SyntaxError:
+            # error-case code may not parse; keep template positions
+            pass
         with open(json_file_path, "w") as file:
             json.dump(json_data["ground_truth"], file, indent=4)
     # tqdm.write(f"Saved JSON ground truth to {json_file_path}")

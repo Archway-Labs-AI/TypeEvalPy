@@ -1,0 +1,388 @@
+{
+  "stats": {
+    "files": 142,
+    "facts": 823,
+    "already_correct": 794,
+    "corrected": 0,
+    "unmatched": 29,
+    "files_changed": 0
+  },
+  "mismatches": [],
+  "unmatched": [
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/classes/abstract_class/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 12,
+        "col_offset": 9,
+        "variable": "self.width",
+        "function": "Rectangle.__init__",
+        "type": [
+          "<value1>"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/classes/abstract_class/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 13,
+        "col_offset": 9,
+        "variable": "self.height",
+        "function": "Rectangle.__init__",
+        "type": [
+          "<value1>"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/classes/base_class_attr/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 5,
+        "col_offset": 13,
+        "variable": "self.a",
+        "function": "A.B.__init__",
+        "type": [
+          "<value1>"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/classes/base_class_calls_child/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 9,
+        "col_offset": 9,
+        "variable": "self.child",
+        "function": "B.__init__",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/classes/base_class_calls_child/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 17,
+        "col_offset": 9,
+        "variable": "self.child",
+        "function": "C.__init__",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/classes/class_variable/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 9,
+        "variable": "self.instance_var",
+        "function": "MyClass.__init__",
+        "type": [
+          "<value2>"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/classes/nested_class_calls/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 9,
+        "col_offset": 9,
+        "function": "B.__init__",
+        "variable": "self.c",
+        "type": [
+          "C"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/classes/nested_class_calls/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 17,
+        "col_offset": 9,
+        "function": "A.__init__",
+        "variable": "self.c",
+        "type": [
+          "C"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/classes/self_assign_func/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 9,
+        "variable": "self.a",
+        "function": "B.__init__",
+        "type": [
+          "A"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/classes/self_assignment/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 9,
+        "function": "A.__init__",
+        "variable": "self.smth",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/dynamic/compile/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 1,
+        "variable": "a",
+        "type": [
+          "<value1>"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/dynamic/exec/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 5,
+        "col_offset": 1,
+        "variable": "a",
+        "type": [
+          "<value1>"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/generators/iter_param/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 11,
+        "col_offset": 9,
+        "variable": "self.max",
+        "function": "Cls.__init__",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/generators/iter_param/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 14,
+        "col_offset": 9,
+        "variable": "self.n",
+        "function": "Cls.__iter__",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/generators/iter_param/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 22,
+        "col_offset": 9,
+        "variable": "self.n",
+        "function": "Cls.__next__",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/generators/iter_return/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 10,
+        "col_offset": 9,
+        "variable": "self.max",
+        "function": "Cls.__init__",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/generators/iter_return/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 13,
+        "col_offset": 9,
+        "function": "Cls.__iter__",
+        "variable": "self.n",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/generators/iter_return/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 19,
+        "col_offset": 9,
+        "function": "Cls.__next__",
+        "variable": "self.n",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/generators/iterable/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 9,
+        "function": "func.__init__",
+        "variable": "self.n",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/generators/iterable/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 7,
+        "col_offset": 9,
+        "function": "func.__init__",
+        "variable": "self.num",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/generators/iterable/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 14,
+        "col_offset": 18,
+        "variable": "self.num",
+        "function": "func.__next__",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/generators/iterable_assigned/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 9,
+        "variable": "self.max",
+        "function": "Cls.__init__",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/generators/iterable_assigned/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 9,
+        "col_offset": 9,
+        "function": "Cls.__iter__",
+        "variable": "self.n",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/generators/iterable_assigned/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 17,
+        "col_offset": 9,
+        "variable": "self.n",
+        "function": "Cls.__next__",
+        "type": [
+          "int"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/mro/basic_init/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 7,
+        "col_offset": 9,
+        "function": "A.__init__",
+        "variable": "self.a",
+        "type": [
+          "<value1>"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/mro/self_assignment/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 9,
+        "function": "B.funcb",
+        "variable": "self.smth",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/mro/self_assignment/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 14,
+        "col_offset": 9,
+        "function": "A.funca",
+        "variable": "self.smth",
+        "type": [
+          "callable"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/returns/object/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 6,
+        "col_offset": 9,
+        "variable": "self.name",
+        "function": "Person.__init__",
+        "type": [
+          "str"
+        ]
+      }
+    },
+    {
+      "file": "micro-benchmark-autogen-templates/python_features/returns/object/main_gt.json",
+      "fact": {
+        "file": "main.py",
+        "line_number": 7,
+        "col_offset": 9,
+        "function": "Person.__init__",
+        "variable": "self.age",
+        "type": [
+          "int"
+        ]
+      }
+    }
+  ]
+}
